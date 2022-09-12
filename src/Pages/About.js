@@ -4,6 +4,6 @@ const CalenderComponent = () => {
   return <h1>About</h1>;
 };
 
-const Calender = MotionHoc(CalenderComponent);
+const About = MotionHoc(CalenderComponent);
 
-export default Calender;
+export default About;

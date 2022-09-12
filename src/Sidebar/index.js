@@ -223,7 +223,7 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/team"
+            to="/projects"
           >
           <Text clicked={click}>Projects</Text>
             <AiFillAppstore style={{fontSize: '26px'}} />
@@ -232,7 +232,7 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/calender"
+            to="/about"
           >
           <Text clicked={click}>About</Text>
             <IoInformationCircle style={{fontSize: '26px'}} />
@@ -241,7 +241,7 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/projects"
+            to="/studies"
           >
           <Text clicked={click}>Studies</Text>
             <IoSchoolSharp style={{fontSize: '26px'}} />
@@ -250,7 +250,7 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/documents"
+            to="/contact"
           >
           <Text clicked={click}>Contact</Text>
             <ImEnvelop style={{fontSize: '26px'}} />

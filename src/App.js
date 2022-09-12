@@ -2,8 +2,8 @@ import { Route, Routes, useLocation } from "react-router";
 import Sidebar from "./Sidebar";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Team";
-import Calender from "./Pages/Calender";
-import Documents from "./Pages/Documents";
+import About from "./Pages/About";
+import Studies from "./Pages/Studies";
 import Projects from "./Pages/Projects";
 import styled from "styled-components";
 import { AnimatePresence } from "framer-motion";
@@ -32,10 +32,10 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
             <Route exact path="/" element={<Home />} />
-            <Route path="/team" element={<Projects/>} />
-            <Route path="/calender" element={<Calender/>} />
             <Route path="/projects" element={<Projects/>} />
-            <Route path="/documents" element={<Contact/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/studies" element={<Studies/>} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
         </AnimatePresence>
       </Pages>

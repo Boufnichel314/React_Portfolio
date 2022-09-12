@@ -4,6 +4,6 @@ const TeamComponent = () => {
   return <h1>Contact</h1>;
 };
 
-const Team = MotionHoc(TeamComponent);
+const Contact = MotionHoc(TeamComponent);
 
-export default Team;
+export default Contact;
