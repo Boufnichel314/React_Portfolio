@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { HiOutlineHome } from "react-icons/hi";
+import {AiFillAppstore} from "react-icons/ai";
+import {FaRegAddressCard} from 'react-icons/fa'
+import {ImEnvelop} from 'react-icons/im';
 //All the svg files
 import logo from "../logo.svg";
 // import Home from "../logo.svg";
@@ -135,17 +138,17 @@ const Text = styled.span`
   width: ${(props) => (props.clicked ? "100%" : "0")};
   overflow: hidden;
   margin-right: ${(props) => (props.clicked ? "1.5rem" : "0")};
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 `;
 
 const Profile = styled.div`
-  width: ${(props) => (props.clicked ? "9rem" : "3rem")};
+  width: ${(props) => (props.clicked ? "16rem" : "3rem")};
   height: 3rem;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-right: ${(props) => (props.clicked ? "9rem" : "-10rem")};
   background-color: var(--black);
   color: var(--white);
@@ -157,7 +160,7 @@ const Profile = styled.div`
     border-radius: 50%;
     cursor: pointer;
     position: fixed;
-    right: 0;
+    right: 4px;
     &:hover {
       border: 2px solid var(--grey);
       padding: 2px;
@@ -165,22 +168,18 @@ const Profile = styled.div`
   }
 `;
 
-const Details = styled.div`
-  display: ${(props) => (props.clicked ? "flex" : "none")};
-  justify-content: space-between;
-  align-items: center;
-`;
-
 const Name = styled.div`
-  padding: 0 1.5rem;
-
+  padding-right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h4 {
-    display: inline-block;
+    display: flex;
+    span{
+      margin-right: 0.4rem;
+    }
   }
 
   a {
@@ -190,26 +189,6 @@ const Name = styled.div`
 
     &:hover {
       text-decoration: underline;
-    }
-  }
-`;
-
-const Logout = styled.button`
-  border: none;
-  width: 2rem;
-  height: 2rem;
-  background-color: transparent;
-
-  img {
-    width: 100%;
-    height: auto;
-    filter: invert(15%) sepia(70%) saturate(6573%) hue-rotate(2deg)
-      brightness(100%) contrast(126%);
-    transition: all 0.3s ease;
-    &:hover {
-      border: none;
-      padding: 0;
-      opacity: 0.5;
     }
   }
 `;
@@ -247,7 +226,7 @@ const Sidebar = () => {
             to="/team"
           >
           <Text clicked={click}>Projects</Text>
-            <img src={Projects} alt="Team" />
+            <AiFillAppstore style={{fontSize: '26px'}} />
             
           </Item>
           <Item
@@ -255,8 +234,8 @@ const Sidebar = () => {
             activeClassName="active"
             to="/calender"
           >
-          <Text clicked={click}>Calender</Text>
-            <img src={Calender} alt="Calender" />
+          <Text clicked={click}>About</Text>
+            <FaRegAddressCard style={{fontSize: '26px'}} />
             
           </Item>
           <Item
@@ -264,8 +243,8 @@ const Sidebar = () => {
             activeClassName="active"
             to="/documents"
           >
-          <Text clicked={click}>Documents</Text>
-            <img src={Documents} alt="Documents" />
+          <Text clicked={click}>Contact</Text>
+            <ImEnvelop style={{fontSize: '26px'}} />
             
           </Item>
           <Item
@@ -280,13 +259,8 @@ const Sidebar = () => {
         </SlickBar>
 
         <Profile clicked={profileClick}>
-        <Details clicked={profileClick}>
-            <Logout>
-              <img src={PowerOff} alt="logout" />
-            </Logout>
-          </Details>
             <Name>
-              <h4>Boufnichel</h4>
+              <h4><span>Boufnichel</span><span>Yassine</span></h4>
               <a href="/#">view&nbsp;profile</a>
             </Name>
             <img  onClick={() => handleProfileClick()}src={require('../Boufnichel.jpeg')} width="70" height="50" alt="cam"/>

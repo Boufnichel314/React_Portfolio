@@ -34,7 +34,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/team" element={<Projects/>} />
             <Route path="/calender" element={<Calender/>} />
-            <Route path="/documents" element={<Documents/>} />
+            <Route path="/documents" element={<Contact/>} />
             <Route path="/projects" element={<Projects/>} />
           </Routes>
         </AnimatePresence>
