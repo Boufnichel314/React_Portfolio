@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { HiOutlineHome } from "react-icons/hi";
+import {ImHome} from 'react-icons/im'
+import {IoInformationCircle, IoSchoolSharp} from 'react-icons/io5'
 import {AiFillAppstore} from "react-icons/ai";
-import {FaRegAddressCard} from 'react-icons/fa'
 import {ImEnvelop} from 'react-icons/im';
 //All the svg files
 import logo from "../logo.svg";
@@ -217,7 +217,7 @@ const Sidebar = () => {
             to="/"
           >
           <Text clicked={click}>Home</Text>
-            <HiOutlineHome style={{fontSize: '26px'}} />
+            <ImHome style={{fontSize: '26px'}} />
             
           </Item>
           <Item
@@ -235,7 +235,16 @@ const Sidebar = () => {
             to="/calender"
           >
           <Text clicked={click}>About</Text>
-            <FaRegAddressCard style={{fontSize: '26px'}} />
+            <IoInformationCircle style={{fontSize: '26px'}} />
+            
+          </Item>
+          <Item
+            onClick={() => setClick(false)}
+            activeClassName="active"
+            to="/projects"
+          >
+          <Text clicked={click}>Studies</Text>
+            <IoSchoolSharp style={{fontSize: '26px'}} />
             
           </Item>
           <Item
@@ -247,21 +256,12 @@ const Sidebar = () => {
             <ImEnvelop style={{fontSize: '26px'}} />
             
           </Item>
-          <Item
-            onClick={() => setClick(false)}
-            activeClassName="active"
-            to="/projects"
-          >
-          <Text clicked={click}>Projects</Text>
-            <img src={Projects} alt="Projects" />
-            
-          </Item>
         </SlickBar>
 
         <Profile clicked={profileClick}>
             <Name>
               <h4><span>Boufnichel</span><span>Yassine</span></h4>
-              <a href="/#">view&nbsp;profile</a>
+              <a href="https://www.linkedin.com/in/boufnichel-yassine/" target="_blank">view&nbsp;profile</a>
             </Name>
             <img  onClick={() => handleProfileClick()}src={require('../Boufnichel.jpeg')} width="70" height="50" alt="cam"/>
 
