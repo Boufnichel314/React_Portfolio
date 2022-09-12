@@ -3,17 +3,9 @@ import {ImHome} from 'react-icons/im'
 import {IoInformationCircle, IoSchoolSharp} from 'react-icons/io5'
 import {AiFillAppstore} from "react-icons/ai";
 import {ImEnvelop} from 'react-icons/im';
-//All the svg files
-import logo from "../logo.svg";
-// import Home from "../logo.svg";
-import Projects from "../logo.svg";
-import Contact from "../logo.svg";
-import Calender from "../logo.svg";
-import Documents from "../logo.svg";
-import PowerOff from "../logo.svg";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-
+import './index.css'
 const Container = styled.div`
   position: fixed;
   right: 0;
@@ -61,6 +53,9 @@ const Button = styled.button`
     top: ${(props) => (props.clicked ? "1.2" : "1.5rem")};
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
   }
+  @media (max-width: 768px) { 
+    display: none;
+  }
 `;
 
 const SidebarContainer = styled.div`
@@ -80,14 +75,14 @@ const SidebarContainer = styled.div`
 `;
 
 const Logo = styled.div`
-  width: 2rem;
+  width: 4rem;
 
   img {
     width: 100%;
     height: auto;
   }
 `;
-
+if(<Testing/> > 1200){}
 const SlickBar = styled.ul`
   color: var(--white);
   list-style: none;
@@ -101,7 +96,6 @@ const SlickBar = styled.ul`
   position: absolute;
   top: 6rem;
   right: 0;
-
   width: ${(props) => (props.clicked ? "12rem" : "3.5rem")};
   transition: all 0.5s ease;
   border-radius: 30px 0 0 30px;
@@ -207,16 +201,15 @@ const Sidebar = () => {
       </Button>
       <SidebarContainer>
         <Logo>
-          <img src={logo} alt="logo" />
         </Logo>
-        <SlickBar clicked={click}>
+        <SlickBar className="slickbar" clicked={click}>
           <Item
             onClick={() => setClick(false)}
             exact
             activeClassName="active"
             to="/"
           >
-          <Text clicked={click}>Home</Text>
+          <Text className="text" clicked={click}>Home</Text>
             <ImHome style={{fontSize: '26px'}} />
             
           </Item>
@@ -225,7 +218,7 @@ const Sidebar = () => {
             activeClassName="active"
             to="/projects"
           >
-          <Text clicked={click}>Projects</Text>
+          <Text className="text" clicked={click}>Projects</Text>
             <AiFillAppstore style={{fontSize: '26px'}} />
             
           </Item>
@@ -234,7 +227,7 @@ const Sidebar = () => {
             activeClassName="active"
             to="/about"
           >
-          <Text clicked={click}>About</Text>
+          <Text className="text" clicked={click}>About</Text>
             <IoInformationCircle style={{fontSize: '26px'}} />
             
           </Item>
@@ -243,7 +236,7 @@ const Sidebar = () => {
             activeClassName="active"
             to="/studies"
           >
-          <Text clicked={click}>Studies</Text>
+          <Text className="text" clicked={click}>Studies</Text>
             <IoSchoolSharp style={{fontSize: '26px'}} />
             
           </Item>
@@ -252,7 +245,7 @@ const Sidebar = () => {
             activeClassName="active"
             to="/contact"
           >
-          <Text clicked={click}>Contact</Text>
+          <Text className="text" clicked={click}>Contact</Text>
             <ImEnvelop style={{fontSize: '26px'}} />
             
           </Item>
