@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React_Portfolio/static/css/main.a7ac82ef.css",
+    "main.js": "/React_Portfolio/static/js/main.bd1dfa89.js",
+    "static/media/Boufnichel.jpeg": "/React_Portfolio/static/media/Boufnichel.fd6938aa40ba8d4f2e88.jpeg",
+    "index.html": "/React_Portfolio/index.html",
+    "main.a7ac82ef.css.map": "/React_Portfolio/static/css/main.a7ac82ef.css.map",
+    "main.bd1dfa89.js.map": "/React_Portfolio/static/js/main.bd1dfa89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7ac82ef.css",
+    "static/js/main.bd1dfa89.js"
+  ]
+}
