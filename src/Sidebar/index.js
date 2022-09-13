@@ -65,13 +65,12 @@ const SidebarContainer = styled.div`
   margin-top: 1rem;
   border-radius: 30px 0 0 30px;
   padding: 1rem 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
+  
 `;
 
 const Logo = styled.div`
@@ -82,7 +81,6 @@ const Logo = styled.div`
     height: auto;
   }
 `;
-if(<Testing/> > 1200){}
 const SlickBar = styled.ul`
   color: var(--white);
   list-style: none;
