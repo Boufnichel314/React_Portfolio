@@ -11,11 +11,10 @@ const Container = styled.div`
   right: 0;
   .active {
     border-left: 4px solid var(--white);
-
-    img {
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
-        brightness(103%) contrast(103%);
-    }
+  }
+  @media (max-width: 768px) {
+    position: fixed;
+    bottom: 0;
   }
 `;
 
@@ -27,13 +26,10 @@ const Button = styled.button`
   border-radius: 50%;
   margin: 0.5rem 0 0 0.5rem;
   cursor: pointer;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
-
   &::before,
   &::after {
     content: "";
@@ -65,12 +61,23 @@ const SidebarContainer = styled.div`
   margin-top: 1rem;
   border-radius: 30px 0 0 30px;
   padding: 1rem 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
   position: relative;
-  
+   @media (max-width: 768px) {
+     border:2px solid blue;
+     width: 100vw;
+     height: 3.5rem;
+    margin-left: 1rem;
+    border-radius: 30px 30px 0 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
 `;
 
 const Logo = styled.div`
@@ -88,15 +95,24 @@ const SlickBar = styled.ul`
   flex-direction: column;
   align-items: center;
   background-color: var(--black);
-
   padding: 2rem 0;
-
   position: absolute;
   top: 6rem;
   right: 0;
   width: ${(props) => (props.clicked ? "12rem" : "3.5rem")};
   transition: all 0.5s ease;
   border-radius: 30px 0 0 30px;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: absolute;
+    top: 0.5rem;
+    border-radius: 30px 30px 0 0;
+  }
 `;
 
 const Item = styled(NavLink)`
@@ -105,9 +121,14 @@ const Item = styled(NavLink)`
   width: 100%;
   padding: 1rem 0;
   cursor: pointer;
-
   display: flex;
   padding-left: 1rem;
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 20%;
+    padding: 0 1rem;
+    // border: 2px solid green;
+  }
 
   &:hover {
     border-right: 4px solid var(--white);
@@ -145,7 +166,9 @@ const Profile = styled.div`
   background-color: var(--black);
   color: var(--white);
   transition: all 0.3s ease;
-
+  @media (max-width: 768px) {
+    display: none;
+  }
   img {
     width: 2.5rem;
     height: 2.5rem;
@@ -200,7 +223,7 @@ const Sidebar = () => {
       <SidebarContainer>
         <Logo>
         </Logo>
-        <SlickBar className="slickbar" clicked={click}>
+        <SlickBar clicked={click}>
           <Item
             onClick={() => setClick(false)}
             exact
