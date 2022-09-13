@@ -48,9 +48,9 @@
 
 @media only screen and (max-width: 1024px) {
     .home_container{
-        /* position: fixed; */
-        left: 6px;
-        top: 1.5rem;
+        position: relative;
+        /* left: 6px; */
+        bottom: 1rem;
         flex-direction: column;
         margin-left: 4px;
     }

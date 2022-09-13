@@ -66,10 +66,8 @@ const SidebarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
    @media (max-width: 768px) {
-     border:2px solid blue;
      width: 100vw;
      height: 3.5rem;
     margin-left: 1rem;
@@ -110,7 +108,7 @@ const SlickBar = styled.ul`
     justify-content: space-between;
     padding: 0 2rem;
     position: absolute;
-    top: 0.5rem;
+    top: 0.8rem;
     border-radius: 30px 30px 0 0;
   }
 `;
