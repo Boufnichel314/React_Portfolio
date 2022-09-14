@@ -5,7 +5,7 @@
     justify-content: space-between;
     height: 80vh;
     width: 80vw;
-    background-color: #99a4b9;
+    background-color: #b9b9b1;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 40px;
 }
@@ -14,12 +14,12 @@
 .home_container .image{
     width: 40%;
     height: 90%;
-    background-image: url(../Boufnichel.jpeg);
+    background-image: url(../me.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 8%;
-    border: 6px solid rgb(82, 82, 86);
+    border: 6px solid #ad8c5f;
     margin-left: 2rem;
 
 }
