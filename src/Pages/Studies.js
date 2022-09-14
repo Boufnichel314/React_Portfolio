@@ -1,7 +1,7 @@
 import MotionHoc from "./MotionHoc";
 
 const DocumentsComponent = () => {
-  return <h1>Studies</h1>;
+  return <h1></h1>;
 };
 
 const Studies = MotionHoc(DocumentsComponent);
