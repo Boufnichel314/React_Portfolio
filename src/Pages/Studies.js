@@ -1,6 +1,11 @@
 import MotionHoc from "./MotionHoc";
+import '../styles/home.css'
 const DocumentsComponent = () => {
-  return <h1>Studies</h1>;
+  return (
+    <div className="home_container">
+    
+    </div>
+  );
 };
 const Studies = MotionHoc(DocumentsComponent);
 export default Studies;

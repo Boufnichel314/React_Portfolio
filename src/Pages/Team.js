@@ -1,7 +1,11 @@
 import MotionHoc from "./MotionHoc";
-
+import '../styles/home.css'
 const TeamComponent = () => {
-  return <h1>Contact</h1>;
+  return (
+    <div className="home_container">
+    
+    </div>
+  );
 };
 
 const Contact = MotionHoc(TeamComponent);
