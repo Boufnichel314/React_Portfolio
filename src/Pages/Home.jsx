@@ -5,7 +5,6 @@ const HomeComponent = () => {
   return (
     <div className="home_container">
       <div className="image">
-
       </div>
       <div className="about_image">
       <div className="name">
