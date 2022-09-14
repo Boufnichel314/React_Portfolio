@@ -9,6 +9,7 @@ const HomeComponent = () => {
       <div className="about_image">
       <div className="name">
         <h2 className="h2">Boufnichel Yassine</h2>
+        <div className="lign"></div>
         <div className="typewriter">
         <Typewriter
           options={{
