@@ -226,7 +226,7 @@ const Sidebar = () => {
             onClick={() => setClick(false)}
             exact
             activeClassName="active"
-            to=""
+            to="React_Portfolio/"
           >
           <Text className="text" clicked={click}>Home</Text>
             <ImHome style={{fontSize: '26px'}} />
