@@ -31,7 +31,7 @@ function App() {
       <Pages>
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="" element={<Home />} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/studies" element={<Studies/>} />
