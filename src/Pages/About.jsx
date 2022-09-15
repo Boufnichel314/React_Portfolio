@@ -10,7 +10,7 @@ const CalenderComponent = () => {
         {/* <h3>Yassine</h3> */}
         </div>
         <div className="about_description">
-          <p> Hello dear, <br /> I'm a software enineer student, a web application developer, with expertise in reactJs, Laravel and responsive design, so i will definitely help you for whatever you want. <br /> Don't hesitate, and contatct me. </p>
+          <p> Hello dear, <br /> I'm a software engineer student, a web application developer, with expertise in reactJs, Laravel and responsive design, so i will definitely help you for whatever you want. <br /> Don't hesitate, and contatct me. </p>
         </div>
         <div className="about_icons">
 

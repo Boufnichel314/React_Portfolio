@@ -127,11 +127,11 @@
 @media only screen and (max-width: 1024px) {
     .about_container{
         position: relative;
-        bottom: 3rem;
+        bottom: 6rem;
+        height: 70vh;
         flex-direction: column;
         margin-left: 4px;
-        border-radius: 40px 40px 0 0;
-        
+        border-radius: 40px 40px 0 0;        
     }
     .about_container .image{
         width: 100%;
@@ -172,7 +172,6 @@
     }
     .about_container .about_image .about_description p{
         font-size: 15px;
-        /* border-left: 2px solid #e5e1da; */
         padding-top: 0;
         padding-left: 1rem;
     }
@@ -182,17 +181,14 @@
     .about_container .about_image .about_description::after{
         content: '';
         position: absolute;
-        top: 1.7rem;
+        top: 1.2rem;
         left: 0.5rem;
         border-left: 4px solid #e5e1da;
-        height: 75%;
+        height: 80%;
     }
     .about_container .image .img{
         width: 100%;
         height: 100%;
-        /* position: relative;
-        top: 0;
-        left: 0; */
         border-top: 4px solid #9e9a40;
         border-left: 4px solid #9e9a40;
         border-right: 4px solid #9e9a40;
@@ -202,9 +198,9 @@
 @media only screen and (max-width: 390px) {
     .about_container{
         position: relative;
-        bottom: 3rem;
+        bottom: 6rem;
+        height: 70vh;
         width: 90vw;
-        height: 80vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -228,11 +224,16 @@
     }
     .about_container .about_image .about_description::after{
         position: absolute;
-        top: 1.2rem;
-        height: 80%;
+        top: 0.5rem;
+        height: 90%;
     }
 }
 @media only screen and (width: 375px){
+    .about_container{
+        position: relative;
+        bottom: 6rem;
+        height: 70vh;
+    }
     .about_container .about_image .about_description::after{
         position: absolute;
         top: 0.6rem;
