@@ -13,17 +13,17 @@
 .about_container .image{
     width: 50%;
     height: 100%;
-    
     border-radius: 0 40px 40px 0;
     position: relative;
 }
 .about_container .image .img{
     width: 90%;
     height: 90%;
-    background-image: url(../me.jpg);
+    background-image: url(../me2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #76a39c;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -40,7 +40,6 @@
     /* border-radius: 40px 0 0 40px; */
     margin: 2rem 0 2rem 2rem;
     border-radius: 8%;
-    border: 2px solid red;
 }
 /* .about_container .about_image .name{
     font-size: 2rem;

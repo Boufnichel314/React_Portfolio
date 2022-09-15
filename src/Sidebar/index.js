@@ -9,9 +9,11 @@ import './index.css'
 const Container = styled.div`
   position: fixed;
   right: 0;
+  z-index: 1000;
   .active {
     border-left: 4px solid var(--white);
   }
+  
   @media (max-width: 768px) {
     position: fixed;
     bottom: 0;
