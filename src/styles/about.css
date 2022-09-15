@@ -58,10 +58,11 @@
 @media only screen and (max-width: 1024px) {
     .about_container{
         position: relative;
-        /* left: 6px; */
         bottom: 3rem;
         flex-direction: column;
         margin-left: 4px;
+        border-radius: 40px 40px 0 0;
+
     }
     .about_container .image{
         width: 100%;
