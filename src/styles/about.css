@@ -131,7 +131,7 @@
         flex-direction: column;
         margin-left: 4px;
         border-radius: 40px 40px 0 0;
-
+        
     }
     .about_container .image{
         width: 100%;
@@ -201,8 +201,10 @@
 }
 @media only screen and (max-width: 390px) {
     .about_container{
+        position: relative;
+        bottom: 3rem;
         width: 90vw;
-        height: 84vh;
+        height: 80vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -226,7 +228,14 @@
     }
     .about_container .about_image .about_description::after{
         position: absolute;
-        top: 1.4rem;
-        height: 76%;
+        top: 1.2rem;
+        height: 80%;
+    }
+}
+@media only screen and (width: 375px){
+    .about_container .about_image .about_description::after{
+        position: absolute;
+        top: 0.6rem;
+        height: 88%;
     }
 }
