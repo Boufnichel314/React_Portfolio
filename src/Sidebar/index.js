@@ -275,7 +275,7 @@ const Sidebar = () => {
               <h4><span>Boufnichel</span><span>Yassine</span></h4>
               <a href="https://www.linkedin.com/in/boufnichel-yassine/" target="_blank">view&nbsp;profile</a>
             </Name>
-            <img  onClick={() => handleProfileClick()}src={require('../me.jpg')} width="70" height="50" alt="cam"/>
+            <img onClick={() => handleProfileClick()}src={require('../me.jpg')} width="70" height="50" alt="cam"/>
 
         </Profile>
       </SidebarContainer>
