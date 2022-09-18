@@ -1,5 +1,5 @@
 .about_container{
-    z-index: -2;
+    /* z-index: -2; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -172,15 +172,21 @@
         height: 80vh;
         flex-direction: column;
         margin-left: 4px;
-        border-radius: 40px 40px 0 0;        
+        border-radius: 40px;        
     }
     .about_container .image{
-        width: 100%;
-        height: 50%;
+        width: 93%;
+        height: 40%;
         position: relative;
-        top: 1rem;
+        top: -0.5rem;
         margin: 0;
-    
+    }
+    .about_container .image .img{
+        width: 100%;
+        height: 90%;
+        border: 6px solid #9e9a40;
+        border-radius: 10%;
+
     }
     .about_container .about_image{
         width: 100%;
@@ -189,13 +195,12 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 1rem;
+        top: 2rem;
         margin: 0;
-        /* border: 2px solid blue; */
-
-    }
-    .about_container .about_image .about_name{
         /* border: 2px solid red; */
+    }
+    
+    .about_container .about_image .about_name{
         position: absolute;
         top: 0;
         width: 100%;
@@ -226,11 +231,6 @@
         left: 0.5rem;
         border-left: 3px solid #e5e1da;
         height: 117%;
-    }
-    .about_container .image .img{
-        width: 100%;
-        height: 100%;
-        border: 4px solid #9e9a40;
     }
     .about_container .about_image .about_icons{
         width: 100%;
@@ -274,9 +274,17 @@
         align-items: center;
     }
     .about_container .image{
+        width: 93%;
+        height: 40%;
+        border-radius: 40px;
+        position: relative;
+        top: 1.2rem;
+    }
+    .about_container .image .img{
         width: 100%;
-        height: 50%;
-        border-radius: 40px 40px 0 0;
+        height: 90%;
+        border: 6px solid #9e9a40;
+        border-radius: 13%;
     }
     .about_container .about_image{
         width: 100%;
@@ -349,7 +357,7 @@
 @media only screen and (max-width: 375px){
     .about_container .about_image .about_description::after{
         position: absolute;
-        top: 0.9rem;
+        top: 0.8rem;
         height: 118%;
     }
 }

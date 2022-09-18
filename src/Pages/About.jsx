@@ -16,13 +16,13 @@ const CalenderComponent = () => {
         </div>
         <div className="about_icons">
         <div className="icons">
-        <a href="https://www.facebook.com/yassine.boufnichel" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/Boufnichel.y" target="_blank" rel="noreferrer">
         <CgFacebook size={40} className="icon" style = {{zIndex: '100', borderRadius: '50%', backgroundColor: '#e5e1da', padding: '4px'}} />
         </a>
-        <a href="https://www.facebook.com/yassine.boufnichel" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Boufnichel314" target="_blank" rel="noreferrer">
         <BsGithub size={40} className="icon" style = {{zIndex: '100', borderRadius: '50%', backgroundColor: '#e5e1da', padding: '4px'}} />
         </a>
-        <a href="https://www.facebook.com/yassine.boufnichel" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/boufnichel-yassine" target="_blank" rel="noreferrer">
         <TiSocialLinkedin size={40} className="icon" style = {{zIndex: '100', borderRadius: '50%', backgroundColor: '#e5e1da', padding: '4px'}} />
         </a>
         </div>

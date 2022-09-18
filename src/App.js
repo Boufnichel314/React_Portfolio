@@ -7,7 +7,6 @@ import Studies from "./Pages/Studies";
 import Projects from "./Pages/Projects";
 import styled from "styled-components";
 import { AnimatePresence } from "framer-motion";
-
 const Pages = styled.div`
   width: 100vw;
   height: 100vh;
