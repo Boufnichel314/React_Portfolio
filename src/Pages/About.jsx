@@ -8,11 +8,11 @@ const CalenderComponent = () => {
     <div className="about_container">
       <div className="about_image">
         <div className="about_name">
-        <h2>Boufnichel</h2>
+        <h2>Yassine Boufnichel</h2>
         {/* <h3>Yassine</h3> */}
         </div>
         <div className="about_description">
-          <p> Hello dear, <br /> I'm a software engineer student, a web application developer, with expertise in reactJs, Laravel and responsive design.I can incorporate my development and design skills to give your products the outlook that meets your client's needs. <br /> So don't hesitate, and contatct me : </p>
+          <p> Hello dear, <br /> I'm a software engineer student, a web application developer, with expertise in reactJs, Laravel and responsive design.I can incorporate my development and design skills to give your products the outlook that meets your client's needs. <br />  Looking for an expert developer with a diversified skill set, then you are at the right place. <br /> Let's talk here : </p>
         </div>
         <div className="about_icons">
         <div className="icons">

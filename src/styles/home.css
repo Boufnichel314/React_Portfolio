@@ -5,7 +5,7 @@
     justify-content: space-between;
     height: 80vh;
     width: 80vw;
-    background-color: #99989F;
+    background-color: #434346;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 40px;
 }
@@ -21,6 +21,7 @@
     border-radius: 8%;
     border: 6px solid #e5e1da;
     margin-left: 2rem;
+    
 
 }
 .home_container .about_image{
@@ -35,14 +36,14 @@
 .home_container .about_image .name{
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(82, 82, 86);
+    color: #f1ebe0;
     text-align: center;
     margin-top: 1rem;
 }
 .home_container .about_image .name .typewriter{
     font-size: 1.5rem;
     font-weight: 400;
-    color: rgb(66, 66, 83);
+    color: #E0E0E0;
     text-align: center;
     margin-top: 1rem;
 }
