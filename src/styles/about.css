@@ -363,8 +363,8 @@
 @media only screen and (width: 390px){
     .about_container .about_image .about_description::after{
         position: absolute;
-        top: 2rem;
-        height: 110%;
+        top: -4.3rem;
+        height: 160%;
     }
     .about_container .about_image .about_icons .icons a{
         height: 90%;
@@ -374,8 +374,8 @@
 @media only screen and (max-width: 375px){
     .about_container .about_image .about_description::after{
         position: absolute;
-        top: -1.4rem;
-        height: 137%;
+        top: -3.3rem;
+        height: 159%;
     }
     .about_container .about_image .about_icons .icons a{
         height: 90%;
@@ -384,5 +384,10 @@
     .about_container .about_image .about_description p{
         font-size: 13px;
         margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 360px){
+    .about_container .about_image .about_description::after{
+        top:-3.7rem;
     }
 }
