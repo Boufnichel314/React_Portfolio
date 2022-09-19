@@ -12,7 +12,7 @@ const ProjectsComponent = () => {
   return (
     <div className="projects_container">
       <div className="titre">
-        <h2 className="h2">Welcome to my projects page</h2>
+        <h2 className="h2">Our projects</h2>
       </div>
       <div className="my_swippper">
       <Swiper style={{width : '100%', height : '100%'}}
@@ -25,56 +25,57 @@ const ProjectsComponent = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-        <div className="project_description">
+        {/* <div className="project_description">
           
         </div>
         <div className="project_image">
           <div className="img">
           
          </div>
+        </div> */}
+        <div className="test">
+
         </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="project_description">
-        
+        {/* <div className="project_description">
         </div>
         <div className="project_image">
         <div className="im2">
-
           </div>
-        </div>
+        </div> */}
         </SwiperSlide>
         <SwiperSlide>
-        <div className="project_description">
+        {/* <div className="project_description">
           
         </div>
         <div className="project_image">
 
-        </div>
+        </div> */}
         </SwiperSlide>
         <SwiperSlide>
-        <div className="project_description">
+        {/* <div className="project_description">
           
         </div>
         <div className="project_image">
 
-        </div>
+        </div> */}
         </SwiperSlide>
         <SwiperSlide>
-        <div className="project_description">
+        {/* <div className="project_description">
           
         </div>
         <div className="project_image">
 
-        </div>
+        </div> */}
         </SwiperSlide>
         <SwiperSlide>
-        <div className="project_description">
+        {/* <div className="project_description">
           
         </div>
         <div className="project_image">
 
-        </div>
+        </div> */}
         </SwiperSlide>
       </Swiper>
       </div>
