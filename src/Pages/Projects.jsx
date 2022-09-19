@@ -34,7 +34,6 @@ const ProjectsComponent = () => {
          </div>
         </div> */}
         <div className="test">
-
         </div>
         </SwiperSlide>
         <SwiperSlide>
